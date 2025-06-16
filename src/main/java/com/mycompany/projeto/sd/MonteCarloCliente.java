@@ -3,7 +3,10 @@ package com.mycompany.projeto.sd;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Scanner;
-
+/**
+ *
+ * @author evelise
+ */
 public class MonteCarloCliente {
     public static void main(String[] args) {
         try {
@@ -15,8 +18,12 @@ public class MonteCarloCliente {
             long numPontos = scanner.nextLong();
 
             System.out.println("Calculando Pi no servidor remoto...");
+            long inicio = System.currentTimeMillis();
             double pi = stub.calcularPi(numPontos);
+            long fim = System.currentTimeMillis();
+
             System.out.println("Valor aproximado de Pi: " + pi);
+            System.out.println("Tempo de execução (Distribuído - RMI): " + (fim - inicio) + " ms");
 
             scanner.close();
         } catch (Exception e) {
