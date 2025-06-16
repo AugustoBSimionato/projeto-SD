@@ -3,8 +3,10 @@
 
 ## Grupo 2
 - Augusto B. Simionato
-- Felipe Kauã de Lima
 - Evelise Aparecida Ribino
+- Felipe Kauã de Lima
+- Gustavo José da Silveira Mello
+- Vinicius Sussumu Vieira Ogawa
 
 ## Compilação e Execução do Projeto
 
