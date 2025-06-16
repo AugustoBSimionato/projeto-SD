@@ -1,0 +1,8 @@
+package com.mycompany.projeto.sd;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+public interface MonteCarloRMI extends Remote {
+    double calcularPi(long numPontos) throws RemoteException;
+}
