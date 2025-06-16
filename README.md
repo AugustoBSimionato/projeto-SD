@@ -3,4 +3,4 @@
 
 ## Grupo 2
 - Augusto B. Simionato
-- 
+- Felipe Kauã de Lima
