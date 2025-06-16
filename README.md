@@ -1,7 +1,7 @@
 # Projeto Final - Sistemas Distribuídos
 > Cálculo de Pi por Monte Carlo
 
-## Grupo 2
+## Grupo 3
 - Augusto B. Simionato
 - Evelise Aparecida Ribino
 - Felipe Kauã de Lima
