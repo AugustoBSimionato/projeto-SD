@@ -10,6 +10,8 @@
 
 ## Compilação e Execução do Projeto
 
-- Compilar: javac src/main/java/com/mycompany/projeto/sd/*.java
+- Compilar:
+> javac src/main/java/com/mycompany/projeto/sd/*.java
 
-- Executar: java -cp src/main/java com.mycompany.projeto.sd.ProjetoSd
+- Executar:
+> java -cp src/main/java com.mycompany.projeto.sd.ProjetoSd
