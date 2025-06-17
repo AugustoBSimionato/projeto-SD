@@ -1,5 +1,15 @@
 package com.mycompany.projeto.sd;
 
+/**
+ * Projeto principal para execução dos testes comparativos entre:
+ * - Implementação sequencial
+ * - Implementação paralela
+ * - Implementação distribuída (RMI)
+ * 
+ * Estruturado inicialmente por Augusto B. Simionato.
+ * Baseado nos testes desenvolvidos por Felipe Kauã e Vinicius.
+ * Adaptado por Evelise Ribino.
+ */
 public class ProjetoSd {
     public static void main(String[] args) {
         int numThreads = Runtime.getRuntime().availableProcessors();
@@ -39,6 +49,27 @@ public class ProjetoSd {
                 System.err.println("Erro na execução paralela: " + e.getMessage());
             }
 
+            //RMI
+            System.out.println("3. IMPLEMENTAÇÃO DISTRIBUÍDA (RMI)");
+            try {
+                long inicioRmi = System.currentTimeMillis();
+
+                //Conectando ao servidor RMI
+                MonteCarloRMI stub = (MonteCarloRMI) java.rmi.Naming.lookup("rmi://localhost:1099/MonteCarlo");
+
+                // Chamando o método remoto
+                double piRmi = stub.calcularPi(numPontos);
+
+                long tempoRmi = System.currentTimeMillis() - inicioRmi;
+
+                System.out.println("Pi calculado: " + piRmi);
+                System.out.println("Precisão: " + String.format("%.8f", Math.abs(Math.PI - piRmi)));
+                System.out.println("Tempo de execução: " + tempoRmi + " ms");
+                System.out.println("Speedup (vs sequencial): " + String.format("%.2f", (double) tempoSeq / tempoRmi) + "x\n");
+
+            } catch (Exception e) {
+                System.err.println("Erro na execução via RMI: " + e.getMessage());
+            }
             System.out.println("=============================================\n");
         }
     }
