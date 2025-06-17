@@ -44,7 +44,7 @@ Em seguida, inicie o cliente ou execute o projeto diretamente:
 ou
 
 > java -cp src/main/java com.mycompany.projeto.sd.ProjetoSd
-➡️ No menu que será exibido, selecione a opção "Paralela".
+➡️ No menu que será exibido, selecione a opção "Distribuída".
 
 ✅ Descrição do Projeto
 Este projeto tem como objetivo comparar o tempo de execução de três abordagens:
