@@ -44,9 +44,9 @@ public class ProjetoSd {
 
     private static void exibirMenu() {
         System.out.println("========== MENU DE EXECUÇÃO ==========");
-        System.out.println("1. Execução Sequencial");
-        System.out.println("2. Execução Paralela");
-        System.out.println("3. Execução Distribuída");
+        System.out.println("1. Sequencial");
+        System.out.println("2. Paralela");
+        System.out.println("3. Distribuída");
         System.out.println("4. Executar Todos os Métodos");
         System.out.println("0. Sair");
         System.out.println("======================================");
