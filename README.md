@@ -37,8 +37,14 @@ Compilar:
 3️⃣ Execução Distribuída (RMI)
 Inicie o servidor:
 > java -cp src/main/java com.mycompany.projeto.sd.MonteCarloServidor
-Em seguida, inicie o cliente:
+
+Em seguida, inicie o cliente ou execute o projeto diretamente:
 > java -cp src/main/java com.mycompany.projeto.sd.MonteCarloCliente
+
+ou
+
+> java -cp src/main/java com.mycompany.projeto.sd.ProjetoSd
+➡️ No menu que será exibido, selecione a opção "Paralela".
 
 ✅ Descrição do Projeto
 Este projeto tem como objetivo comparar o tempo de execução de três abordagens:
