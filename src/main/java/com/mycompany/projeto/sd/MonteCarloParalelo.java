@@ -6,11 +6,12 @@ import java.util.concurrent.*;
 public class MonteCarloParalelo {
     
     /**
-     * Calcula Pi usando o método Monte Carlo paralelo
-     * @param numPontos número total de pontos aleatórios
-     * @param numThreads número de threads a serem utilizadas
-     * @return valor aproximado de Pi
-     */
+ * Implementação do cálculo paralelo de Pi usando o método de Monte Carlo.
+ * Código desenvolvido por Augusto B. Simionato.
+ * 
+ * Adaptado por Evelise Ribino para integração com a solução distribuída (RMI)
+ * e testes comparativos no projeto.
+ */
     public static double calcularPi(long numPontos, int numThreads) throws InterruptedException, ExecutionException {
         ExecutorService executor = Executors.newFixedThreadPool(numThreads);
         long pontosPorThread = numPontos / numThreads;
