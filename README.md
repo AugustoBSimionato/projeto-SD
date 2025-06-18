@@ -66,10 +66,11 @@ Distribuída RMI	(preencher com o tempo)
 💻 Configuração da Máquina
 Exemplo de máquina utilizada nos testes de Evelise Aparecida Ribino:
 
-Processador: Intel Core i7-1355U (13th Gen) – 1.70 GHz
-Núcleos: 10 físicos / 12 lógicos
-Memória RAM: 16 GB
-Sistema Operacional: Windows 11 Home Single Language
+Processador: AMD Ryzen 7 5700x; 8 núcleos; 16 threads.  
+Memória RAM: 32GB.  
+Sistema Operacional: Windows 11 IoT Enterprise LTSC; 64 bits.  
+Ambiente de execução: Java 24.  
+Número de hosts: 1.
 
 🔍 Observações
 O projeto foi desenvolvido colaborativamente com a seguinte divisão de atividades:
