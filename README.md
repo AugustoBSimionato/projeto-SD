@@ -58,10 +58,11 @@ Foram realizados testes com diferentes quantidades de pontos para verificar o de
 
 📊 Tabela Comparativa
 
-Abordagem	Tempo de Execução (ms)
-Sequencial	(preencher com o tempo)
-Paralela	(preencher com o tempo)
-Distribuída RMI	(preencher com o tempo)
+| Método       | 1M Pontos      | 10M Pontos     | 50M Pontos     | 100M Pontos    |
+|--------------|---------------|---------------|---------------|---------------|
+| Sequencial   | 14,30 ± 1,35  | 134,20 ± 1,17 | 667,40 ± 2,69 | 1336,30 ± 6,68|
+| Paralelo     | 8,80 ± 11,22  | 20,50 ± 2,77  | 85,60 ± 8,09  | 144,00 ± 9,27 |
+| Distribuído  | 14,80 ± 29,76 | 20,80 ± 1,94  | 83,00 ± 6,88  | 145,10 ± 6,09 |
 
 💻 Configuração da Máquina
 Exemplo de máquina utilizada nos testes de Evelise Aparecida Ribino:
