@@ -56,7 +56,7 @@ Implementação distribuída com RMI
 O cálculo utilizado é o método de Monte Carlo para aproximação de Pi.
 Foram realizados testes com diferentes quantidades de pontos para verificar o desempenho de cada abordagem.
 
-📊 Tabela Comparativa
+📊 Tabela Comparativa de tempo (em milissegundos)
 
 | Método       | 1M Pontos      | 10M Pontos     | 50M Pontos     | 100M Pontos    |
 |--------------|---------------|---------------|---------------|---------------|
